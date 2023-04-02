@@ -52,3 +52,11 @@
 .cell-container {
   display: flex;
 }
+
+.cell input {
+  width: 10px;
+  background: none;
+  color: white;
+  border: none 1px dashed #999;
+  cursor: pointer;
+}
