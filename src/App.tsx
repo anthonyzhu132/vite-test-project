@@ -19,6 +19,8 @@ function App() {
     ]);
   };
 
+  const combinedArray = cells.join("");
+
   return (
     <main className="App">
       <div className="cell-container">
@@ -31,11 +33,14 @@ function App() {
               value={cell}
             />
             {index < cells.length - 1 && (
-              <span onClick={() => onPlusClicked(index)}>+</span>
+              <span className="span-add" onClick={() => onPlusClicked(index)}>
+                +
+              </span>
             )}
           </div>
         ))}
       </div>
+      {combinedArray}
     </main>
   );
 }
